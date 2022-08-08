@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -ex
+
+mkdir -p $BUILDROOT/etc/
+
+# Pushing os-release in image
+cp os-release $BUILDROOT/etc/os-release
+
+# Create empty resolv.conf to allow host bind-mount of the file
+touch $BUILDROOT/etc/resolv.conf $BUILDROOT/etc/machine-id
+

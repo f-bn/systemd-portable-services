@@ -1,0 +1,2 @@
+PORTABLE_PRETTY_NAME="OpenJDK 17 Runtime (Portable Services base image)"
+PORTABLE_ID=openjdk-17-runtime

@@ -8,6 +8,11 @@ This repository contains various files to build Portable Services images to be d
 
 **Images**
 
+There are 2 types of images in this repository :
+
+  - **Runtime images** (`*-runtime`) : these images are a base image to share common runtime(s) between multiples Portables Services (OpenJDK, NodeJS, Python...) by using the `extension` feature
+  - **Regular images** : these images embed the service application itself, they can be monolithic (runtime + application embedded) or they can be lightweight (but they require a runtime base image in order to run correctly)
+
 **Requirements**
 
 - systemd >= 241
@@ -15,7 +20,7 @@ This repository contains various files to build Portable Services images to be d
 
 ### How to build and use these images ?
 
-Firstly, install `mkosi` from the package manager:
+Firstly, install `mkosi` from the package manager :
 
 ```shell
 dnf install -y mkosi

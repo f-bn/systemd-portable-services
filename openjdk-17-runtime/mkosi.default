@@ -1,0 +1,13 @@
+[Distribution]
+Distribution=fedora
+Release=36
+
+[Content]
+BasePackages=no
+Packages=glibc-minimal-langpack,java-17-openjdk-headless
+WithDocs=no
+CleanPackageMetadata=auto
+
+[Output]
+Format=plain_squashfs
+Output=openjdk-17-runtime.raw
