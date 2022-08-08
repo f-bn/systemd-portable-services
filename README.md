@@ -11,7 +11,7 @@ This repository contains various files to build Portable Services images to be d
 There are 2 types of images in this repository :
 
   - **Runtime images** (`*-runtime`) : base images used to share runtime(s) between multiples Portables Services (OpenJDK, NodeJS, Python...) by using the `extension` feature
-  - **Regular images** : the service application itself, they can be monolithic (runtime + application embedded) or they can be a lightweight extension image (but this require a runtime base image)
+  - **Regular images** : the service application images, they can be monolithic (runtime + application embedded in a single image) or they can be a lightweight extension image (but they require a runtime base image in order to run)
 
 **Requirements**
 
