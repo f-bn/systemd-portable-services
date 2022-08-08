@@ -25,3 +25,4 @@ dnf install -y mkosi
 
 * Portable Services : https://systemd.io/PORTABLE_SERVICES/
 * Walkthrough for Portable Services : https://0pointer.net/blog/walkthrough-for-portable-services.html
+* mkosi : https://github.com/systemd/mkosi
